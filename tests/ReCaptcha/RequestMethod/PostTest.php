@@ -133,7 +133,7 @@ class PostTest extends TestCase
     protected function assertCommonOptions(array $args)
     {
         $this->assertCount(3, $args);
-        $this->assertStringStartsWith('https://www.google.com/', $args[0]);
+        $this->assertStringStartsWith('https://recaptcha.google.cn/', $args[0]);
         $this->assertFalse($args[1]);
         $this->assertTrue(is_resource($args[2]), 'The context options should be a resource');
     }
